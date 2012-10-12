@@ -49,12 +49,9 @@ var EaseSpriteDemo = cc.Layer.extend({
     _title:null,
 
     ctor:function() {
+        this._super();
         cc.associateWithNative( this, cc.Layer );
         this.init();
-    },
-    init:function() {
-        // this._super(cc.c4b(0, 0, 0, 255), cc.c4b(0, 128, 255, 255));
-        this._super();
     },
 
     title:function () {

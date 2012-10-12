@@ -31,13 +31,9 @@ var winSize = null;
 
 var TestScene = cc.Scene.extend({
     ctor:function (bPortrait) {
-        cc.associateWithNative( this, cc.Scene );
-        // this._super();
-        this.init();
-    },
-
-    init:function() {
         this._super();
+        cc.associateWithNative( this, cc.Scene );
+        this.init();
     },
 
     // callbacks
@@ -74,6 +70,7 @@ var TestController = cc.Layer.extend({
     _beginPos:0,
     isMouseDown:false,
     ctor:function () {
+        this._super();
         cc.associateWithNative( this, cc.Layer );
         this.init();
     },

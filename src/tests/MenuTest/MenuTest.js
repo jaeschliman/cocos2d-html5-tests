@@ -37,6 +37,7 @@ var TAG_MENU1 = 77771;
 //------------------------------------------------------------------
 var LayerMainMenu = cc.Layer.extend({
     ctor:function() {
+        this._super();
         cc.associateWithNative( this, cc.Layer );
         this.init();
     },
@@ -172,6 +173,7 @@ var LayerMainMenu = cc.Layer.extend({
 //------------------------------------------------------------------
 var MenuLayer2 = cc.Layer.extend({
     ctor:function() {
+        this._super();
         cc.associateWithNative( this, cc.Layer );
         this.init();
     },
@@ -254,6 +256,7 @@ var MenuLayer2 = cc.Layer.extend({
 //------------------------------------------------------------------
 var MenuLayer3 = cc.Layer.extend({
     ctor:function() {
+        this._super();
         cc.associateWithNative( this, cc.Layer );
         this.init();
     },
@@ -315,6 +318,7 @@ var MenuLayer3 = cc.Layer.extend({
 
 var MenuLayer4 = cc.Layer.extend({
     ctor:function () {
+        this._super();
         cc.associateWithNative( this, cc.Layer );
         this.init();
     },

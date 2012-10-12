@@ -45,12 +45,9 @@ var ActionsDemo = cc.Layer.extend({
     kathia:null,
 
     ctor:function() {
+        this._super();
         cc.associateWithNative( this, cc.Layer );
         this.init();
-    },
-    init:function() {
-        // this._super(cc.c4b(0, 0, 0, 255), cc.c4b(0, 128, 255, 255));
-        this._super();
     },
 
     centerSprites:function (numberOfSprites) {

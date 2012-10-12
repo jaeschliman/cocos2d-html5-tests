@@ -42,12 +42,9 @@ var LayerTest = cc.Layer.extend({
     _title:null,
 
     ctor:function() {
+        this._super();
         cc.associateWithNative( this, cc.Layer );
         this.init();
-    },
-
-    init:function() {
-        this._super();
     },
 
     title:function () {

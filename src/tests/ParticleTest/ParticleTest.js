@@ -161,7 +161,7 @@ var ParticleDemo = cc.Layer.extend({
     _textureModeButton: null,
 
     ctor: function() {
-        //this._super();
+        this._super();
         cc.associateWithNative(this, cc.Layer);
         this.init();
     },
