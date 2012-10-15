@@ -36,6 +36,10 @@ var TestScene = cc.Scene.extend({
         this.init();
     },
 
+    /*init:function() {
+        this._super();
+    },*/
+
     // callbacks
     onEnter:function () {
         this._super();
